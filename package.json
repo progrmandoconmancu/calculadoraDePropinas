@@ -1,0 +1,11 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Calculadora en la que puedes averiguar el precio que tienes que dejar de propina dependiendo del monto.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Programandoconmancu",
+  "license": "ISC"
+}

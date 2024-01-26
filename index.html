@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Calculadora que permite a los usuarios ingresar el monto de la factura y calcular diferentes porcentajes de propinas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculadora de Propinas - 2024</title>
+</head>
+
+<body>
+    <!--Div container-->
+    <div class="flex justify-center items-center bg-black h-screen w-screen">
+
+        <!--Div que simula a un Móvil-->
+        <div
+            class="w-[400px] h-[700px] border border-purple-500 rounded-lg flex items-start justify-center flex-col gap-8 bg-gradient-to-b from-black via-black to-stone-900">
+
+            <div class="w-full h-auto py-2 flex justify-center items-center hidden" id="divAlerta">
+
+            </div>
+
+            <!--Título-->
+            <div class="flex justify-center items-center w-full h-auto py-2">
+                <h1 class="text-white text-3xl">Calculadora de Propinas</h1>
+            </div>
+
+            <!--Input monto-->
+            <div class="flex justify-center items-center w-full h-auto py-2 flex-col gap-3">
+                <!--input de monto-->
+                <label for="inputMonto" class="text-center text-white text-xl">Ingresa el monto:</label>
+                <input class="w-[200px] text-center py-1 outline-none border border-purple-400" id="inputMonto" name="montoInput" type="number" min="0">
+
+            </div>
+
+            <!--Porcentajes-->
+            <div class="flex flex-col justify-center items-center  w-full h-auto py-2">
+                <!--tittle-->
+                <P class="text-center text-white text-xl">Selecciona el porcentaje:</P>
+
+                <!--div para insertar los porcentajes-->
+                <div class="grid grid-cols-2 grid-row-2 w-full h-auto py-2">
+
+                    <!--primer porcentaje-->
+                    <div class="flex justify-center items-center  gap-1">
+                        <input type="radio" name="radios" id="opc1" value="5">
+                        <label for="opc1" class="text-white">5%</label>
+                    </div>
+
+                    <!--Segundo porcentaje-->
+                    <div class="flex justify-center items-center gap-1">
+                        <input type="radio" name="radios" id="opc2" value="10">
+                        <label for="opc2" class="text-white">10%</label>
+                    </div>
+
+
+                    <!--Tercer porcentaje-->
+                    <div class="flex justify-center items-center gap-1">
+                        <input type="radio" name="radios" id="opc3" value="15">
+                        <label for="opc3" class="text-white">15%</label>
+                    </div>
+
+                    <!--Cuarto porcentaje-->
+                    <div class="flex justify-center items-center gap-1">
+                        <input type="radio" name="radios" id="opc4" value="20">
+                        <label for="opc4" class="text-white">20%</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Botón-->
+            <div class="flex justify-center items-center w-full h-auto py-2">
+                <button class="bg-purple-500 px-5 py-4 text-white rounded" id="btnCalcular">Calcular</button>
+            </div>
+
+            <!--Resultado-->
+            <div class="flex justify-center items-center w-full h-auto py-2 flex-col" id="divAbajo">
+                <p class="text-white text-center text-xl">Tu monto es:</p>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
